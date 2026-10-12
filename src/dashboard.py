@@ -8,7 +8,7 @@ from database import connect_to_database
 def get_data_from_database(view_name):
     engine = connect_to_database()
 
-    # Consulta os dados da view e transforma em DataFrame
+    # Consulta os dados da view e transforma em dataframe
     query = f"SELECT * FROM {view_name}"
 
     data = pd.read_sql(query, engine)
