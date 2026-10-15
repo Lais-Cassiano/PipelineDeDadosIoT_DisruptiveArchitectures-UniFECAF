@@ -146,7 +146,7 @@ Com os dados importados, utilize no terminal o comando:
 Get-Content .\sql\views.sql | docker exec -i pipeline_dados_iot_postgres psql -U postgres -d iot_database
 ```
 
-O comando, a partir do arquivo `views.slq`, cria as views que serão utilizdas pelo dashboard.
+O comando, a partir do arquivo `views.slq`, cria as views que serão utilizadas pelo dashboard.
 
 ### 7. Executar o dashboard
 
@@ -162,13 +162,13 @@ O streamlit deverá abrir um endereço local autoamticamente, ou o mesmo se enco
 http://localhost:8501
 ```
 
-Acesse o endereço no navegador para visualizar os treês gráficos.
+Acesse o endereço no navegador para visualizar os três gráficos.
 
 ### 8. Encerrar a execução
 
-Para parar o dashboard, utilize `Ctrl + C` no terminal que está rodando o Streamlit.
+Para encerrar o sistema, utilize `Ctrl + C` no terminal que está rodando o Streamlit.
 
-Para parar e remover o container do projeto, utilize o comando:
+Para encerrar e remover o container do projeto, utilize o comando:
 
 ```bash
 docker compose down
